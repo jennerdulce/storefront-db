@@ -30,6 +30,11 @@ app.use(v2Routes);
 app.use('*', notFound);
 app.use(errorHandler)
 
+// Home Handler
+app.get('/', (req, res) => {
+  res.status(200).json('Server is Working!')
+})
+
 module.exports = {
   app: app,
   start: (port) => {
