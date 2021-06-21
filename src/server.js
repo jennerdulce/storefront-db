@@ -26,14 +26,15 @@ app.use(authRoutes);
 app.use(v1Routes);
 app.use(v2Routes);
 
-// Error Handlers
-app.use('*', notFound);
-app.use(errorHandler)
-
 // Home Handler
 app.get('/', (req, res) => {
   res.status(200).json('Server is Working!')
 })
+
+// Error Handlers
+app.use('*', notFound);
+app.use(errorHandler)
+
 
 module.exports = {
   app: app,
