@@ -3,7 +3,6 @@
 const fs = require('fs');
 const express = require('express');
 const Collection = require('../models/data-collection.js');
-
 const v1 = express.Router();
 
 const models = new Map();

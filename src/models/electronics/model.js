@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 
-const clothesSchema = mongoose.Schema({
+const electronicsSchema = mongoose.Schema({
   item: { type: String, required: true },
   cost: { type: String, required: true },
   stock: { type: String, required: true },
@@ -10,6 +10,6 @@ const clothesSchema = mongoose.Schema({
   category: { type: String, required: true }
 });
 
-const clothesModel = mongoose.model('clothes', clothesSchema);
+const electronicsModel = mongoose.model('electronics', electronicsSchema);
 
-module.exports = clothesModel;
+module.exports = electronicsModel;
